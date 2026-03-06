@@ -1,0 +1,21 @@
+{
+  "name": "koda-b7-forking",
+  "version": "1.0.0",
+  "description": "1. Fork from source repo to your own repo\r 2. Clone your own repo to your local directory\r 3. Add new remote (ex. upstream) which contains source repo url\r 4. Create your own feature branch for updating\r 5. Add and Commit your changes\r 6. Push local repository to your own repo\r 7. Create new Pull Request (PR) to source repo\r 8. Wait for owner to approve your PR",
+  "main": "menu.js",
+  "scripts": {
+    "start": "node menu.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodacampmain/koda-b7-forking.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/kodacampmain/koda-b7-forking/issues"
+  },
+  "homepage": "https://github.com/kodacampmain/koda-b7-forking#readme"
+}
