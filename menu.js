@@ -7,6 +7,7 @@ import isGenap from "./features/7_isGenap.js";
 import convertCtoK from "./features/6_conversionCtoK.js";
 import toLowerCase from "./features/9_toLowerCase.js";
 import { pyramidNumber } from "./features/10_pyramidNumber.js";
+import calculation from "./features/11_calculation.js";
 
 
 
@@ -27,6 +28,7 @@ async function menu() {
         console.log("8. Simple Calculator");
         console.log("9. To Lower Case");
         console.log("10. TPyramid Number");
+        console.log("11. Menghitung Panjang");
         console.log("0. Exit")
 
         try {
@@ -63,6 +65,9 @@ async function menu() {
                     break;
                 case "10":
                     await pyramidNumber(rl)
+                    break;
+                case "11":
+                    await calculation(rl)
                     break;
                 default:
                     console.log("pilihan anda masih dalam tahap perkembangan\n")
