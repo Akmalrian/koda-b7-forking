@@ -30,7 +30,7 @@ async function menu() {
                     sayHelloWorld()
                     break;
                 case "8":
-                    main(rl)
+                    await main(rl)
                     break;
 
                 default:
@@ -42,5 +42,7 @@ async function menu() {
         }
     } while (!exit)
 }
+
+export default menu
 
 menu()
