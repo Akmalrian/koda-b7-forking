@@ -4,7 +4,7 @@ import sayHelloWorld from "./features/1_greeting.js";
 import { main } from "./features/8_calculator.js";
 import isGenap from "./features/7_isGenap.js";
 import convertCtoK from "./features/6_conversionCtoK.js";
-
+import toLowerCase from "./features/9_toLowerCase.js";
 
 async function menu() {
     let exit = false
@@ -20,6 +20,7 @@ async function menu() {
         console.log("6. Konversi Celcius-Kelvin")
         console.log("7. Cek Ganjil Genap")
         console.log("8. Simple Calculator");
+        console.log("9. To Lower Case");
         console.log("0. Exit")
 
         try {
@@ -44,6 +45,9 @@ async function menu() {
                     break;
                 case "8":
                     await main(rl)
+                    break;
+                case "9":
+                    toLowerCase()
                     break;
                 default:
                     console.log("pilihan anda masih dalam tahap perkembangan\n")
