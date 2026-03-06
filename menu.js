@@ -1,5 +1,7 @@
 import { createInterface } from "node:readline/promises";
 
+import sayHelloWorld from "./features/1_greeting.js";
+
 async function menu() {
     let exit = false
     const rl = createInterface({
@@ -34,10 +36,6 @@ async function menu() {
             throw err
         }
     } while (!exit)
-}
-
-function sayHelloWorld() {
-    console.log("Hello World")
 }
 
 menu()
